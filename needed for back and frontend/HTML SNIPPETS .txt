@@ -1,0 +1,53 @@
+Change image size (tall&short)
+https://youtube.com/shorts/d9i68C628Nk?feature=share
+
+INFINITE circular slider
+https://css-tricks.com/css-only-infinite-and-circular-image-slider/
+
+aspect ratio
+https://youtube.com/shorts/Z6sNWaj_b8o?feature=share
+
+image slider using css
+https://youtu.be/z74ExMz-cWU
+
+parallax effect
+https://youtu.be/azuQfPngaDg
+
+liquid effect interactive
+https://youtube.com/shorts/VTw2cUVFl1c?feature=share
+
+TOP 4 HTML SNIPPETS
+https://youtube.com/shorts/NsqoVbGkqLE?feature=share
+
+Conditional display of button
+https://youtube.com/shorts/A93TWmeIeJo?feature=share
+
+invalid answer shake
+https://youtube.com/shorts/Mx56-eD5dWU?feature=share
+
+PHP LOGIN
+https://youtu.be/5L9UhOnuos0
+
+PHP DATABASE
+https://youtu.be/2HVKizgcfjo
+
+PHP DATABASE (MORE THOROUGH)
+https://youtu.be/Y9yE98etanU
+
+CIRCLE HOVER EFFECT
+https://youtu.be/htGfnF1zN4g
+
+css positions
+https://youtube.com/shorts/jFcWa9kiOHQ?feature=share
+
+play sound effects
+https://youtu.be/1Dtej5yArr8
+
+image trail effect
+https://youtu.be/FM4ekrZJv2s
+
+On scroll animations
+https://youtu.be/T33NN_pPeNI
+
+quiz
+https://www.youtube.com/watch?v=1ydfKDwsYbU

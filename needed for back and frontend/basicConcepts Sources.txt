@@ -1,0 +1,16 @@
+What is Java? | IBM. (2023). Ibm.com. https://www.ibm.com/topics/java
+
+https://www.softwaretestinghelp.com/java-basics-and-core-java-concepts/#Java_Syntax
+
+https://www.javatpoint.com/primitive-vs-non-primitive-data-structure#:~:text=Primitive%20data%20structure%20is%20a%20kind%20of%20data%20structure%20that,are%20integer%2C%20character%2C%20float.
+
+
+
+ARRAYS LOOPS
+https://www.simplilearn.com/tutorials/java-tutorial/for-loop-in-java#:~:text=Loops%20in%20Java%20is%20a,condition%20evaluates%20to%20be%20true.
+
+CLASS
+https://www.javatpoint.com/object-and-class-in-java#:~:text=What%20is%20a%20class%20in,It%20is%20a%20logical%20entity.
+
+DATA MEMBERS
+https://www.cs.nmsu.edu/~rth/cs/cs177/map/datamem.html#:~:text=A%20data%20member%20may%20be,of%20the%20class%20function%20members.

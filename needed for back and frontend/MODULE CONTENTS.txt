@@ -1,0 +1,21 @@
+BASIC
+
+- basic concepts
+- Conditionals and Loops
+- Arrays
+- Strings
+- Classes and objects
+- More classes
+
+Intermediate
+- advanced oop concepts
+- Classes, objects, methods
+- Inheritance, polymorphism, interfaces
+- Exceptions, files and collections (java 1)
+
+Advanced
+- Exception handling (java 3)
+- Java File I/O
+- Parameters and Overloading
+- Static and Nested Classes
+- Polymorphism

@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url("universalBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
+}
+#TitleSign {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    float:right;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    transform: translate(-0%,-35%);
+    z-index: 5;
+}
+#Sun {
+    width: 450px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    z-index: 4;
+}
+
+#Cloud {
+    width: 150px;
+    position: absolute;
+    animation-name: cloud1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+#header {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+
+}
+@keyframes cloud1 {
+    0%   {left:0px;}
+
+    50%  {left:100%;}
+
+    100% {left:0px;}
+}
+#Cloud2 {
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    animation-name: cloud2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    transform: scaleX(-1);
+}
+@keyframes cloud2 {
+    0%   {right:0px;}
+
+    50%  {right:100%;}
+
+    100% {right:-10px;}
+}
+#Cloud3 {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    animation-name: cloud3;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cloud3 {
+    0%   {left:0px;}
+
+    50%  {left:100%;}
+
+    100% {left:0px;}
+}
+
+#cont1 {
+    width: 100%;
+    height: 50%;
+    margin-top: 20%;
+    background-image: url("moduleImg/prllxDivider.png");
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.Titles {
+    margin-left: 5px;
+    font-size: calc(4.5px + 1vw);
+    font-family: 'Darumadrop One', cursive;
+    color: black;
+}
+.Houses {
+    width: calc(300px + 2vw);
+    height: 300px;
+    object-fit: contain;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Images {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    position: absolute;
+    z-index: 4;
+}
+
+.Houses:hover {
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+
+#title1 {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 40%;
+    z-index: 9;
+
+}
+
+#title2 {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 40%;
+    z-index: 9;
+}
+
+#title3 {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 40%;
+    z-index: 9;
+}
+#cont2 {
+    width: 100%;
+    height: 50%;
+    margin-top: 45%;
+    background-image: url("moduleImg/prllxDivider.png");
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
