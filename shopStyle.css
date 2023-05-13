@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url("homeImg/HomeBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+   
+}
+
+body {
+    display: flex;
+    align-items: center;
+}
+
+.shop-image {
+    width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-right: 20px;
+}

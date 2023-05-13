@@ -1,0 +1,212 @@
+html
+<!--
+    <div id="sun">
+        <div id="sunBody"></div>
+        <div id="sunLine"></div>
+    </div>
+    
+        <div id="green">
+ 
+        </div>
+    
+        <div class="signCont">
+            <div id="signHome"> 
+               
+                <div id="homeStem"></div>
+                <div id="homeBody">
+                    <a id="Logo"><img src="logos/home.png" id="logoPic" alt="#"></a>
+                </div>
+            </div>
+
+            <div id="signQuiz">
+               
+                <div id="quizStem"></div>
+                <div id="quizBody">
+                    <a id="Logo"><img src="logos/brain.png" id="logoPic" alt="#"></a>
+                </div>
+            </div>
+            <div id="signStar">
+               
+                <div id="starStem"></div>
+                <div id="starBody">
+                    <a id="Logo"><img id="logoPic" src="logos/star.png" alt="#"></a>
+                  </div>
+         </div>
+        </div>
+   -->
+           
+            
+        <!-- HOUSE MODULES
+            <div id="module1">
+            <img id="house1" src="homeImg/hModule.png">
+                 </div>-->
+
+
+CSS
+
+/*
+#sun {
+    margin: 0;
+}
+#sunBody {
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: -3%;
+}*/
+/*
+#green {
+    background-image: url("homeImg/grassBg2.png");
+    background-color: rgb(39, 180, 39);
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 26%;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2% ;
+    border-top-width: 50%;
+    overflow: visible;
+}*/
+
+/* for desktop screens 
+@media screen and (min-width: 768px) {
+    .signCont {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  */
+  /* for mobile screens 
+@media screen and (max-width: 767px) {
+    .signCont {
+      display: block;
+    }
+  }
+*/
+
+  
+.signCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; 
+}
+/* LOGO (PICTURE OR SYMBOL IN THE SIGN)*/
+#logoPic {
+    width: 60px;
+    height: 60px;
+}
+#Logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* HOME LOGO SIGN */
+#signHome {
+    top: 60%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+#homeBody {
+    width: 100%;
+    aspect-ratio: 2/1;
+    background-color: rgb(236, 139, 11);
+    z-index: 2;
+    position: absolute;
+   top: -1%;
+   border-width: 5px;
+   border-color: black;
+   border-style: solid;
+}
+#homeStem {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(241, 200, 148);
+    position: absolute;
+    border-color: black;
+    border-width: 5%;
+    border-style: solid;
+    z-index:1;
+}
+
+/* QUIZ LOGO SIGN */
+#signQuiz {
+    top: 10%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+#quizStem {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(241, 200, 148);
+    position: absolute;
+    border-color: black;
+    border-width: 5%;
+    border-style: solid;
+}
+#quizBody {
+   width: 100%;
+   aspect-ratio: 2/1;
+   background-color: rgb(236, 139, 11);
+   z-index: 2;
+   position: absolute;
+   top: -1%;
+   border-width: 5px;
+   border-color: black;
+   border-style: solid;
+}
+
+/* STAR LOGO SIGN */
+#signStar {
+    top: 10%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}
+#starStem {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(241, 200, 148);
+    position: absolute;
+    border-color: black;
+    border-width: 5%;
+    border-style: solid;
+}
+#starBody {
+   width: 100%;
+   aspect-ratio: 2/1;
+   background-color: rgb(236, 139, 11);
+   z-index: 2;
+   position: absolute;
+   top: -1%;
+   border-width: 5px;
+   border-color: black;
+   border-style: solid;
+}
+

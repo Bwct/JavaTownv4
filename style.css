@@ -1,0 +1,357 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url("universalBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+a {
+    text-decoration: none;
+    color: transparent;
+}
+#TitleSign {
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    float:right;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    transform: translate(-0%,-35%);
+    z-index: 5;
+}
+#Sun {
+    width: 450px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    z-index: 4;
+}
+
+#Cloud {
+    width: 150px;
+    position: absolute;
+    animation-name: cloud1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud1 {
+    0%   {left:0px;}
+
+    50%  {left:100%;}
+
+    100% {left:0px;}
+}
+#Cloud2 {
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    animation-name: cloud2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    transform: scaleX(-1);
+}
+@keyframes cloud2 {
+    0%   {right:0px;}
+
+    50%  {right:100%;}
+
+    100% {right:-10px;}
+}
+#Cloud3 {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    animation-name: cloud3;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cloud3 {
+    0%   {left:0px;}
+
+    50%  {left:100%;}
+
+    100% {left:0px;}
+}
+
+#header {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+
+/* SIGNAGES */
+#signCont {
+    width: 100%;    
+    height: 40%;
+    position: absolute;
+    margin-top: 20%;
+    float: left;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.signages{
+    width: calc(200px + 5vw);
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    transition-duration: 0.5s;
+
+}
+
+#homeSign {
+    top: 0%;
+    margin-right: 5%;
+}
+#shopSign {
+    top: 0%;
+    margin-right: 5%;
+}
+#settingSign {
+    top: 0%;
+}
+.signages:hover {
+    width: calc(250px + 3vw);
+    transition: 1s;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 50px white);
+}
+
+/* LIQUID EFFECT */
+#bubble-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.bubble {
+    width: max(300px, 30vw);
+    height: max(300px, 30vw);
+    background-color: brown;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    animation: wave 2s ease-in-out infinite;
+}
+.bubbleText {
+    font-size: max(50px, 10vw);
+    color: red;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -10%);
+    opacity: 0;
+}
+@keyframes wave {
+    from, to {
+        transform: transform(-50%, 0%);
+    }
+    50% {
+        transform: translate(-50%, -20%);
+    }
+
+}
+
+#triviaCont {
+    width: 100%;
+
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 27%;
+    bottom:  0;
+    padding: 10px;
+    word-wrap: break-word;
+
+}
+#triviaText {
+    font-family: 'Darumadrop One', cursive;
+    font-size: calc(10px + 0.5vw);
+    pointer-events: none;
+}
+#triviaTitle {
+    font-family: 'Darumadrop One', cursive;
+    font-size: calc(12px + 0.5vw);
+    pointer-events: none;
+}
+
+/* SCROLLBAR TRIVIA */
+#triviaCont::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px #8CA84B;
+	border-radius: 10px;
+	background-color: rgba(29, 190, 24, 0);
+}
+
+#triviaCont::-webkit-scrollbar
+{
+	width: 7px;
+    
+}
+
+#triviaCont::-webkit-scrollbar-thumb
+{
+	border-radius: 12px;
+	-webkit-box-shadow: inset 0 0 6px #8CA84B;
+	background-color: #8CA84B;
+}
+#triviaCont::-webkit-scrollbar-corner {
+    	background-color: rgba(0,0,0,0);
+}
+
+
+
+/* FOR CP SCREENS*/
+@media only screen and (max-width: 600px) {
+
+    #Cloud {
+        
+        width: 150px;
+        position: absolute;
+        animation-name: cloud1;
+        animation-duration: 100s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes cloud1 {
+        0%   {left:0px;}
+    
+        50%  {left:100%;}
+    
+        100% {left:0px;}
+    }
+    #Cloud2 {
+        width: 200px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        animation-name: cloud2;
+        animation-duration: 80s;
+        animation-iteration-count: infinite;
+        transform: scaleX(-1);
+    }
+    @keyframes cloud2 {
+        0%   {right:0px;}
+    
+        50%  {right:100%;}
+    
+        100% {right:-10px;}
+    }
+    #Cloud3 {
+        width: 250px;
+        position: absolute;
+        top: 100px;
+        animation-name: cloud3;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes cloud3 {
+        0%   {left:0px;}
+    
+        50%  {left:100%;}
+    
+        100% {left:0px;}
+    }
+    
+    #signCont {
+        width: 100%;
+        height: 50%;
+        top:3%;
+        margin-top: auto;
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+  
+    .signages {
+        width: 150px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        transition: 0.5s;
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+    .signages:hover {
+        width: 175px;
+        transition: 1s;
+        cursor: pointer;
+    
+    }
+    #homeSign {
+        top: 0%;
+        margin-right: 5%;
+       
+    }
+    #shopSign {
+        top: 0%;
+        margin-right: 5%;
+        margin-top: 1%;
+    }
+    #settingSign {
+        top: 0%;
+        margin-right: 5%;
+        margin-top: 1%;
+    }
+
+    #triviaCont {
+        width: 30%;
+        object-fit: contain;
+        background-color: rgba(0, 0, 0, 0);
+        float: right;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 27%;
+        bottom:  0;
+        right: 0;
+        padding: 10px;
+        word-wrap: break-word;
+    
+    }
+    #triviaText {
+        font-family: 'Darumadrop One', cursive;
+        font-size: calc(10px + 0.5vw);
+        pointer-events: none;
+    }
+    #triviaTitle {
+        font-family: 'Darumadrop One', cursive;
+        font-size: calc(12px + 0.5vw);
+        pointer-events: none;
+    }
+    
+}
+

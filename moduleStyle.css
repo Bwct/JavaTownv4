@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url("universalBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+#TitleSign {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    float:right;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    transform: translate(-0%,-35%);
+    z-index: 5;
+}
+
+.signLevels {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top: 50%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.module-image {
+    width: calc(300px + 5vh);
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    transition-duration: 0.5s;
+    
+}
+/*
+#sign1:hover {
+    width: 300px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#sign2:hover {
+    width: 300px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+#sign3:hover {
+    width: 300px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}*/
+/* CLOUDS */
+#Cloud {
+    width: 150px;
+    position: absolute;
+    animation-name: cloud1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud1 {
+    0%   {left:-20%;}
+
+    50%  {left:100%;}
+
+    100% {left:0px;}
+}
+#Cloud2 {
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    animation-name: cloud2;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    transform: scaleX(-1);
+}
+@keyframes cloud2 {
+    0%   {right:0px;}
+
+    50%  {right:100%;}
+
+    100% {right:-10px;}
+}
+#Cloud3 {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    animation-name: cloud3;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes cloud3 {
+    0%  {left:-20%;}
+
+    50% {left:100%;}
+
+    100% {left:-20%;}
+}
+
+#header {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+} 
+
+#roadCont {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
+}
+.jeeps {
+    transform: translateY(-22%);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    
+}
+
+#jeepney {
+    left: -20%;
+    transform: translateX(-1);
+    animation-name: drive;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+#jeepney2 {
+    right: 100%;
+    transform: translateX(-1);
+    transform: rotateY(180deg);
+    animation-name: drive2;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-delay: 14s;
+
+}
+
+@keyframes drive {
+    0%   {left:-20%;}
+
+    100%  {left:120%;}
+
+}
+@keyframes drive2 {
+    0%   {right:-20%;}
+
+    100%  {right:120%;}
+
+}
+
+    /* FOR CP SCREENS*/
+    @media only screen and (max-width: 600px) {
+
+        /*  clouds  */
+        #Cloud {
+            width: 150px;
+            position: absolute;
+            animation-name: cloud1;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes cloud1 {
+            0%   {left:-20%;}
+        
+            50%  {left:100%;}
+        
+            100% {left:0px;}
+        }
+        #Cloud2 {
+            width: 200px;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            animation-name: cloud2;
+            animation-duration: 80s;
+            animation-iteration-count: infinite;
+            transform: scaleX(-1);
+        }
+        @keyframes cloud2 {
+            0%   {right:0px;}
+        
+            50%  {right:100%;}
+        
+            100% {right:-10px;}
+        }
+        #Cloud3 {
+            width: 250px;
+            position: absolute;
+            top: 100px;
+            animation-name: cloud3;
+            animation-duration: 50s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cloud3 {
+            0%  {left:-20%;}
+        
+            50% {left:100%;}
+        
+            100% {left:-20%;}
+        }
+        .signLevels {
+            width: 100%;
+            height: 50%;
+            top:3%;
+            margin-top: auto;
+            position: relative;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .module-image {
+            width: 350px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            transition-duration: 0.5s;
+            margin: -5% auto;
+            
+        }
+    
+    }
+
+
+ 
+/* BIRDS */
+.bird-container {
+    position: absolute;
+    top: 10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.bird-container--one {
+    left: -10%;
+    animation-name: fly-right-one;
+    animation-duration: 15s;
+    animation-delay: 0;
+    cursor: crosshair;
+}
+
+.bird-container--two {
+    left: -20%;
+    animation-name: fly-right-two;
+    animation-duration: 16s;
+    animation-delay: 1s;
+    cursor: crosshair;
+}
+
+.bird-container--three {
+    left: -10%;
+    animation-name: fly-right-one;
+    animation-duration: 14.6s;
+    animation-delay: 3.5s;
+    cursor: crosshair;
+}
+
+.bird-container--four {
+    left: -40%;
+    animation-name: fly-right-two;
+    animation-duration: 16s;
+    animation-delay: 10.25s;
+    cursor: crosshair;
+}
+
+.bird {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+}
+
+.bird--one {
+    animation-name: fly-cycle;
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+}
+
+.bird--two {
+    animation-name: fly-cycle;
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+}
+
+.bird--three {
+    animation-name: fly-cycle;
+    animation-duration: 1.25s;
+    animation-delay: -0.25s;
+}
+
+.bird--four {
+    animation-name: fly-cycle;
+    animation-duration: 1.1s;
+    animation-delay: -0.5s;
+}
+
+@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+    }
+}
+
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.3) translateX(-10vw);
+    }
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.4);
+    }
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.5);
+    }
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.6);
+    }
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.6);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.6);
+    }
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.6);
+    }
+    100% {
+        transform: translateY(0vh) translate }
+    }
+    
+
+
+
+
+
+

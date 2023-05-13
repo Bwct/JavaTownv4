@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<source lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="homeImg/favicon.ico"/>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>JavaTown</title>
+
+
+</head>
+<body onclick="triviaShow()" >
+
+    <picture>
+
+        <img src="homeImg/TitleSign.png" id="TitleSign">
+    </picture>
+        <img src="homeImg/Sun.png" id="Sun">
+
+
+
+
+<div id="header">
+    <img class="clouds" src="homeImg/Cloud.png" id="Cloud">
+    <img class="clouds" src="homeImg/Cloud.png" id="Cloud2">
+    <img class="clouds" src="homeImg/Cloud.png" id="Cloud3">
+</div>
+
+    <div id="signCont">
+        
+        <audio id="soundfx"  preload="auto">
+            <source src="audios/signsfx.mp3">
+            Your browser does not support the <code>audio</code>
+        </audio>
+
+        <a class="links" href="modules.html" onmouseenter="playHoverSound()"><img class="signages" src="homeImg/homeSign.png" id="homeSign" alt="Home"></a>
+
+        <a class="links" href="shop.html" onmouseenter="playHoverSound()"><img class="signages" src="homeImg/shopSign.png" id="shopSign" alt="Shop" ></a>
+        
+        <a class="links" href="settings.html" onmouseenter="playHoverSound()"><img class="signages" src="homeImg/settingSign.png" id="settingSign" alt="Settings" ></a>
+
+
+
+    </div>
+   
+            <div id="bubble-wrapper" onmousemove="animateBubble()">
+
+            </div>
+
+
+    <div id="triviaCont">
+        <h3 id="triviaTitle">Trivias</h3>
+        <p id="triviaText"></p> 
+    </div>
+
+
+
+
+</body>
+</html> 
